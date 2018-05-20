@@ -7,4 +7,5 @@ require_once 'banco_dados/conexao.php';
     $dao = new LivroDAO($livro, $conexao);
     $dao->addLivro();
     echo "Concluido adicionado com sucesso!";
+    header("location:tabela_livros.php");
 ?>

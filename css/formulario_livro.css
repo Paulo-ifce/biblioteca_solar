@@ -1,0 +1,16 @@
+.titulo{
+	font-weight:bold;
+	color:#4c8b5b;
+}
+.imagem{
+	height:400px;
+	box-shadow:10px 10px 10px;
+}
+.citacao{
+	font-weight:bold;
+	color:#555;
+}
+.icone{
+	height:30px;
+	width:30px;
+}

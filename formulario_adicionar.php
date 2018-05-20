@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/formulario_livro.css"/>
 <title>Adicionar Livros</title>
 </head>
 	<body>
-		<h2>Cadastro de livros</h2>
-		<form action="adiciona_livro.php" method="post">
-		Titulo:<input type="text" name="titulo"/><br/>
-		Autor:<input type="text" name="autor"/><br/>
-		Editora:<input type="text" name="editora"/><br/>
-		Edicao:<input type="text" name="edicao"/><br/>
-		<input type="submit" value="Cadastrar" name="cadastrar"/>
-		<input type="reset" value="Cancelar" name="cancelar"/>
-		</form>
+		<div class="container">
+			<div class="page-header">
+				<h1 class="titulo">Biblioteca Solar</h1>
+			</div>
+			<div class="row">
+    			<div class="col-sm-6">
+    				<h2>Cadastro de livros</h2>
+            		<form class ="form" action="adiciona_livro.php" method="post">
+            			<div class="form-group">
+            				<label>Titulo</label>
+            				<input class="form-control" type="text" name="titulo"/>
+            			</div>
+            			<div class="form-group">
+            				<label>Autor</label>
+            				<input class="form-control" type="text" name="autor"/><br/>
+            			</div>
+                		<div class="form-group">
+                			<label>Editora</label>
+                			<input  class="form-control" type="text" name="editora"/><br/>
+            			</div>
+            			<div class="form-group">
+            				<label>Edicao</label>
+            				<input class="form-control" type="text" name="edicao"/><br/>
+            			</div>
+            		<input class ="btn btn-primary" type="submit" value="Cadastrar" name="cadastrar"/>
+            		<input class="btn btn-danger" type="reset" value="Cancelar" name="cancelar"/>
+            		</form>
+    			</div>
+    			<div class="col-sm-6">
+    				<figure><img class="imagem img-responsive thumbnail"alt="imagem de um livro" src="img/livro2.jpg"></figure>
+    				<q class="citacao">
+    					Todos os dias deveríamos ler um bom poema, 
+    					ouvir uma linda canção, contemplar um belo quadro
+    					 e dizer algumas palavras bonitas.
+    				</q>
+    				<br/>
+    				~ Johann Goethe
+    			</div>
+			</div>
+    		
+		</div>
+		
+		<!-- Arquivos JS para rodar o bootstap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="bootstap/js/bootstrap.min.js"></script>
 	</body>
 </html>
