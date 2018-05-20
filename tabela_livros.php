@@ -47,7 +47,7 @@
                             <td>$editora</td>
                             <td>$edicao</td>
                             <td class=\"actions\">
-                            <a  href=\"#\">
+                            <a  href=\"remove_livro.php?cod=$codigo\">
                             <img src=\"img/remover.png\">
                             </a>
                             <a href=\"#\">
@@ -59,6 +59,7 @@
 					?>
 				</tbody>
 			</table>
+			<a href="formulario_adicionar.php" class="btn btn-primary">Adicionar</a>
 		</div>
 		<!-- Arquivos JS para rodar o bootstap -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

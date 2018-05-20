@@ -55,7 +55,9 @@ class LivroDAO
 
     public function removeLivro()
     {
-        // implementação
+        $cod = $this->livro->getCodigo();
+        $sql = "DELETE FROM livros WHERE codigo='$cod'";
+        mysqli_query($this->conexao, $sql);
     }
 
     public function editaLivro()
