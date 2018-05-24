@@ -6,22 +6,17 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/formulario_livro.css"/>
-<title>Adicionar Livros</title>
+<title>Editar Livro</title>
 </head>
 	<body>
 		<div class="container">
 			<div class="page-header">
 				<h1 class="titulo">Biblioteca Solar</h1>
 			</div>
-			<?php
-			if(isset($_GET['erro'])):
-			     echo $_GET['erro'];
-			endif;
-			?>
 			<div class="row">
     			<div class="col-sm-6">
-    				<h2>Cadastro de livros</h2>
-            		<form class ="form" action="adiciona_livro.php" method="post">
+    				<h2>Editar Livro</h2>
+            		<form class ="form" action="edita_livro.php" method="post">
             			<div class="form-group">
             				<label>Titulo</label>
             				<input class="form-control" type="text" name="titulo"/>
@@ -58,6 +53,6 @@
 		
 		<!-- Arquivos JS para rodar o bootstap -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="bootstap/js/bootstrap.min.js"></script>
 	</body>
 </html>

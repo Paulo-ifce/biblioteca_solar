@@ -50,7 +50,7 @@
                             <a  href=\"remove_livro.php?cod=$codigo\">
                             <img src=\"img/remover.png\">
                             </a>
-                            <a href=\"#\">
+                            <a href=\"formulario_editar.php?cod=$codigo&titulo=$titulo&autor=$autor&editora=$editora&edicao=$edicao\">
                             <img src=\"img/edicao.png\">
                             </a>
                             </td>

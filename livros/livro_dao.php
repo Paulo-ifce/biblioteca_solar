@@ -62,7 +62,14 @@ class LivroDAO
 
     public function editaLivro()
     {
-        // implementação
+        $cod = $this->livro->getCodigo();
+        $titulo = $this->livro->getTitulo();
+        $autor = $this->livro->getAutor();
+        $editora = $this->livro->getEditora();
+        $edicao = $this->livro->getEdicao();
+        $sql = "UPDATE livros SET titulo='$titulo',
+        autor='$autor',editora='$editora',edicao='$edicao' WHERE codigo='$cod'";
+        mysqli_query($this->conexao, $sql);
     }
 
     public function buscaLivro()
