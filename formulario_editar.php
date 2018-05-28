@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 		<title>Editar Livros</title>
+		<script type="text/javascript">
+			//aqui vai um javascript
+		</script>
 	</head>
 	<body>
 		<div class="container">
@@ -17,19 +20,19 @@
             		<form class ="form" action="edita_livro.php" method="post">
             			<div class="form-group">
             				<label>Titulo</label>
-            				<input class="form-control" value="<?php echo $_GET['titulo'];?>" type="text" name="titulo"/>
+            				<input id="titulo" class="form-control" value="<?php echo $_GET['titulo'];?>" type="text" name="titulo"/>
             			</div>
             			<div class="form-group">
             				<label>Autor</label>
-            				<input class="form-control" value="<?php echo $_GET['autor']?>" type="text" name="autor"/><br/>
+            				<input id="autor" class="form-control" value="<?php echo $_GET['autor']?>" type="text" name="autor"/><br/>
             			</div>
                 		<div class="form-group">
                 			<label>Editora</label>
-                			<input  class="form-control" value="<?php echo $_GET['editora']?>" type="text" name="editora"/><br/>
+                			<input id="editora" class="form-control" value="<?php echo $_GET['editora']?>" type="text" name="editora"/><br/>
             			</div>
             			<div class="form-group">
             				<label>Edicao</label>
-            				<input class="form-control" value="<?php echo $_GET['edicao']?>" type="text" name="edicao"/><br/>
+            				<input id="edicao" class="form-control" value="<?php echo $_GET['edicao']?>" type="number" name="edicao"/><br/>
             			</div>
             		<input type="hidden" value="<?php echo $_GET['cod'];?>" type="text" name="codigo"/>
             		<input class ="btn btn-primary" type="submit" value="Cadastrar" name="cadastrar"/>
